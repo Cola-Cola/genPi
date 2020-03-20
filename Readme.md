@@ -25,6 +25,6 @@ Python 3.7 recommended<p> </p>
 ---
 
 ## Скорость выполнения:
-Python: ~16с
-C: ~0,5с
-Golang: ~1c
+ <p> Python: ~16с</p>
+<p>C: ~0,5с </p>
+<p>Golang: ~1c</p>
