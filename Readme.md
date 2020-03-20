@@ -3,18 +3,18 @@
 ---
 Реализация подготовлена на трех языках: C, Python, Go
 
-Для С: 
+Для С: <p> </p>
 `g++ GenPi.c -o GenPiC` <p> </p>
 `.\GenPiC.exe`
 
-Для Go:
+Для Go:<p> </p>
 `go run GenPi.go`
 
-Для Python:
-Python 3.7 recommended
+Для Python:<p> </p>
+Python 3.7 recommended<p> </p>
 `pip install numpy`
 
-Если несколько версий Python - принудительный запуск pip нужной версии:
+Если несколько версий Python - принудительный запуск pip нужной версии:<p> </p>
 `pip37 install numpy`<p> </p>
 `python GenPi.py`
 
