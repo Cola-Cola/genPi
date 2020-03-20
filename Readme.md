@@ -4,7 +4,7 @@
 Реализация подготовлена на трех языках: C, Python, Go
 
 Для С: 
-`g++ GenPi.c -o GenPiC`
+`g++ GenPi.c -o GenPiC` <p> </p>
 `.\GenPiC.exe`
 
 Для Go:
@@ -15,7 +15,7 @@ Python 3.7 recommended
 `pip install numpy`
 
 Если несколько версий Python - принудительный запуск pip нужной версии:
-`pip37 install numpy`
+`pip37 install numpy`<p> </p>
 `python GenPi.py`
 
 ---
