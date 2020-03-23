@@ -18,13 +18,22 @@ int main() {
     }
     printf("succesfully filled! \r\n");
 
-    int n_kr = 0;
-    for (int i = 0; i < 10000000; i++)
-        if (pow(x[i], 2) + pow(y[i], 2) <= 1)
-            n_kr++;
+    int vnutri = 0, na =0;
+    for (int i = 0; i < 10000000; i++) {
+        if (pow(x[i], 2) + pow(y[i], 2) < 1)
+            vnutri++;
+        if (pow(x[i], 2) + pow(y[i], 2) == 1)
+            na++;
+    }
 
-    res = (double)4 * n_kr / 10000000;
+
+
+    res = (double)4 * (vnutri+na) / 10000000;
+    double percent_na = (double)na / 100000;
+    double percent_vnutri=(double)vnutri/100000;
     printf("Pi = %lf\n",res);
+    printf("On: %lf%% \n",percent_na);
+    printf("Into: %lf%% \n",percent_vnutri);
     printf("Time taken: %.2fs\n", (double)(clock() - tStart) / CLOCKS_PER_SEC);
 
     return 0;

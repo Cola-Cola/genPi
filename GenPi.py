@@ -11,11 +11,16 @@ if __name__=="__main__":
     for i in range(len(xx)):
         xx[i] = rnd.random()
         yy[i] = rnd.random()
-    N_kr = 0
+    on = 0
+    in_ = 0
     for i in range(len(xx)):
-        if pow(xx[i], 2) + pow(yy[i], 2) <= 1:
-            N_kr += 1
-    print(N_kr, "       ", 4 * N_kr)
-    print((4 * N_kr) / 10000000)
+        if pow(xx[i], 2) + pow(yy[i], 2) < 1:
+            in_ += 1
+        if pow(xx[i], 2) + pow(yy[i], 2) == 1:
+            on += 1
+    #print(N_kr, "       ", 4 * N_kr)
+    print("PI = ", (4 * (on+in_)) / 10000000)
+    print("In = ", in_/100000, "%")
+    print("On = ", on/100000, "%")
     print("--- %s seconds ---" % (time.time() - start_time))
 
